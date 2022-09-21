@@ -8,7 +8,7 @@ import { experiences } from '@data/experiences';
     <h2>EXPERIENCES</h2>
     <div class="content">
       {
-        experiences.map(({ name, startDate, endDate, company, description }) => (
+        experiences.map(({ name, startDate, endDate, company, description, companyUrl }) => (
           <div class="experience">
             <div class="header">
               <h3>{name}</h3>
@@ -16,7 +16,9 @@ import { experiences } from '@data/experiences';
                 {startDate} - {endDate}
               </div>
             </div>
-            <p class="company text-gradient">{company}</p>
+            <a href={companyUrl} target="_blank">
+              <p class="company text-gradient">{company}</p>
+            </a>
             <p class="description">{description}</p>
           </div>
         ))

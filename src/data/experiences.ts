@@ -4,14 +4,18 @@ export const experiences = [
     company: 'Continuum',
     startDate: 'Mar 2022',
     endDate: 'Present',
-    description: '---',
+    description:
+      'Lead the technical team of the relink challenge, contributing from the technical side to the growth stage of the platform.',
+    companyUrl: 'https://www.continuumhq.com',
   },
   {
     name: 'Full Stack Developer',
     company: 'Continuum',
     startDate: 'Feb 2021',
     endDate: 'Mar 2022',
-    description: '---',
+    description:
+      'Integrate the relink development team, a career guidance platform, which seeks to connect people with job opportunities aligned with their skills and interests.',
+    companyUrl: 'https://www.continuumhq.com',
   },
   {
     name: 'Remote Support Enginner',
@@ -19,6 +23,7 @@ export const experiences = [
     startDate: 'Set 2020',
     endDate: 'Feb 2021',
     description: 'Provide operational support to the mining fleet management system and anti-fatigue system.',
+    companyUrl: 'https://www.hexagonmining.com',
   },
   {
     name: 'Application Analyst',
@@ -26,6 +31,7 @@ export const experiences = [
     startDate: 'Set 2018',
     endDate: 'Set 2020',
     description: 'Provide operational support to the mining fleet management system at MinaJusta - Marcobre.',
+    companyUrl: 'https://www.ms4m.com',
   },
   {
     name: 'Developer',
@@ -33,5 +39,6 @@ export const experiences = [
     startDate: 'Nov 2017',
     endDate: 'Set 2018',
     description: 'Develop systems modules in mining technology.',
+    companyUrl: 'https://www.ms4m.com',
   },
 ];

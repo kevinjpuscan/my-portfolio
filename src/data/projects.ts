@@ -1,5 +1,20 @@
 export const projects = [
   {
+    title: 'My Portfolio',
+    owner: 'Owner',
+    description: 'Personal portfolio developed with astro.',
+    image: '/images/my-portfolio.png',
+    github: 'https://github.com/kevinjpuscan/my-portfolio',
+    website: 'https://www.kevinpuscan.com/',
+  },
+  {
+    title: 'Relink',
+    owner: 'Contributor',
+    description: 'Work reconversion platform, I integrated the development team in Continuum.',
+    image: '/images/relink.png',
+    website: 'https://www.relink.cl/',
+  },
+  {
     title: 'Todo App',
     owner: 'Owner',
     description: 'Project with ReactJs and redux, challenge from FrontendMentor',

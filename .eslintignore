@@ -24,3 +24,4 @@ package.json
 package-lock.json
 tsconfig.json
 src/data
+public
