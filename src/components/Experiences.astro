@@ -1,13 +1,14 @@
 ---
 import Wrapper from '@components/Wrapper.astro';
-import {experiences} from '@data/experiences.ts'
+import { experiences } from '@data/experiences';
 ---
+
 <Wrapper>
   <section>
     <h2>EXPERIENCES</h2>
     <div class="content">
       {
-        experiences.map(({name,startDate,endDate,company,description}) => (
+        experiences.map(({ name, startDate, endDate, company, description }) => (
           <div class="experience">
             <div class="header">
               <h3>{name}</h3>
@@ -24,9 +25,9 @@ import {experiences} from '@data/experiences.ts'
   </section>
 </Wrapper>
 <style>
-  	:root {
-		--margin-experiences: 3rem;
-	}
+  :root {
+    --margin-experiences: 3rem;
+  }
   section {
     display: flex;
     flex-direction: column;
@@ -37,12 +38,12 @@ import {experiences} from '@data/experiences.ts'
     width: 20rem;
   }
   .content {
-    width:100%;
+    width: 100%;
   }
 
   .experience {
     margin: var(--margin-experiences) 0;
-    opacity:0.85;
+    opacity: 0.85;
   }
   .header {
     display: flex;
@@ -50,8 +51,8 @@ import {experiences} from '@data/experiences.ts'
     justify-content: space-between;
   }
   .dates {
-    font-size:0.75rem;
-    opacity:0.5;
+    font-size: 0.75rem;
+    opacity: 0.5;
   }
   .company {
     font-size: 0.8rem;
@@ -64,10 +65,9 @@ import {experiences} from '@data/experiences.ts'
     margin: 0.75rem 0;
   }
 
-  @media (min-width: 640px){
+  @media (min-width: 640px) {
     section {
       flex-direction: row;
     }
   }
-
 </style>

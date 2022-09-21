@@ -1,31 +1,32 @@
 ---
-import Wrapper from '@components/Wrapper.astro'
-import SocialLinks from '@components/SocialLinks.astro'
+import Wrapper from '@components/Wrapper.astro';
+import SocialLinks from '@components/SocialLinks.astro';
 ---
+
 <header>
   <Wrapper>
-		<div class="content">
-			<a href="/">
-				<img src="/favicon-kp.svg"/>
-			</a>
-			<SocialLinks/>
-		</div>
+    <div class="content">
+      <a href="/">
+        <img src="/favicon-kp.svg" />
+      </a>
+      <SocialLinks />
+    </div>
   </Wrapper>
 </header>
 <style>
-	header {
-		background: var(--color-bg-invert);
-		color: var(--color-text-invert);
-		padding: 0.5rem 0;
-	}
+  header {
+    background: var(--color-bg-invert);
+    color: var(--color-text-invert);
+    padding: 0.5rem 0;
+  }
 
-	.content{
-		display: flex;
-		justify-content: space-between;
-	}
+  .content {
+    display: flex;
+    justify-content: space-between;
+  }
 
-	img {
-		width: 1.5rem;
-		height: 1.5rem; 
-	}
-	</style>
+  img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+</style>
