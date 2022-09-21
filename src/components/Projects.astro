@@ -1,0 +1,30 @@
+---
+import Wrapper from '@components/Wrapper.astro'
+import ProjectCard from '@components/ProjectCard.astro'
+import {projects} from '@data/projects.ts'
+---
+<Wrapper>
+  <h2>PROJECTS</h2>
+  <div class="content">
+  {
+    projects.map(({title,owner,description,image,github,website})=><ProjectCard title={title} owner={owner} description={description} image={image} github={github} website={website}/>)
+  }
+  </div>
+</Wrapper>
+
+<style>
+  .content{
+		width: 100%;
+		display: grid;
+		gap: 2em;
+		margin: 2em 0;
+		justify-content: center;
+
+	}
+	@media (min-width: 640px) {
+		.content{
+			grid-template-columns: 1fr 1fr;
+			gap: 3em;
+		}
+	}
+</style>

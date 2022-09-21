@@ -1,0 +1,73 @@
+---
+import Wrapper from '@components/Wrapper.astro';
+import {experiences} from '@data/experiences.ts'
+---
+<Wrapper>
+  <section>
+    <h2>EXPERIENCES</h2>
+    <div class="content">
+      {
+        experiences.map(({name,startDate,endDate,company,description}) => (
+          <div class="experience">
+            <div class="header">
+              <h3>{name}</h3>
+              <div class="dates">
+                {startDate} - {endDate}
+              </div>
+            </div>
+            <p class="company text-gradient">{company}</p>
+            <p class="description">{description}</p>
+          </div>
+        ))
+      }
+    </div>
+  </section>
+</Wrapper>
+<style>
+  	:root {
+		--margin-experiences: 3rem;
+	}
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  h2 {
+    margin-top: var(--margin-experiences);
+    width: 20rem;
+  }
+  .content {
+    width:100%;
+  }
+
+  .experience {
+    margin: var(--margin-experiences) 0;
+    opacity:0.85;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .dates {
+    font-size:0.75rem;
+    opacity:0.5;
+  }
+  .company {
+    font-size: 0.8rem;
+    margin: 0.75rem 0;
+    font-weight: 600;
+  }
+
+  .description {
+    font-size: 0.9rem;
+    margin: 0.75rem 0;
+  }
+
+  @media (min-width: 640px){
+    section {
+      flex-direction: row;
+    }
+  }
+
+</style>

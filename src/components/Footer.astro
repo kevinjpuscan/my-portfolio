@@ -1,0 +1,32 @@
+---
+import Wrapper from '@components/Wrapper.astro'
+import SocialLinks from '@components/SocialLinks.astro'
+---
+<footer>
+  <Wrapper>
+    <section>
+      <p>Developed by Kevin Puscán</p>
+      <SocialLinks/>
+    </section>
+  </Wrapper>
+</footer>
+<style>
+  footer {
+    background: var(--color-bg-invert);
+		color: var(--color-text-invert);
+    padding: 3vh 0;
+  }
+
+  section{
+    display:flex;
+    flex-direction:column-reverse;
+    align-items:center;
+  }
+  @media (min-width: 640px) {
+		section{
+			flex-direction:row;
+      justify-content: space-between;
+		}
+	}
+
+</style>
