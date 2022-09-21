@@ -1,62 +1,64 @@
 ---
 export interface Props {
-  title:string;
-  owner:string;
-  description:string;
-  image:string;
-  github:string;
-  website:string;
-  imageSiz:string;
+  title: string;
+  owner: string;
+  description: string;
+  image: string;
+  github: string;
+  website: string;
 }
 
-const { title, owner, description, image, github, website, imageSize} = Astro.props;
+const { title, owner, description, image, github, website, imageSize } = Astro.props;
 ---
-<div class="card">
-	<a href={website}>
-		<div class="container-image">
-			<img class="image" src={image}/>
-		</div>
-	</a>
 
-	<div class="content-card">
-		<div class="header-card">
-			<div class="title-card">
-				<a href={website}>
-					<h3>{title}</h3>
-				</a>
-				<span>{owner}</span>
-			</div>
-			<div class="icon-card">
-				{github && (
-					<a href={github}>
-						<i class="fab fa-github"></i>
-					</a>
-				)}
-			</div>
-		</div>
-		<div class="body-card">
-			<p>{description}</p>
-		</div>
-	</div>
+<div class="card">
+  <a href={website} target="_blank">
+    <div class="container-image">
+      <img class="image" src={image} />
+    </div>
+  </a>
+
+  <div class="content-card">
+    <div class="header-card">
+      <div class="title-card">
+        <a href={website} target="_blank">
+          <h3>{title}</h3>
+        </a>
+        <span>{owner}</span>
+      </div>
+      <div class="icon-card">
+        {
+          github && (
+            <a href={github} target="_blank">
+              <i class="fab fa-github" />
+            </a>
+          )
+        }
+      </div>
+    </div>
+    <div class="body-card">
+      <p>{description}</p>
+    </div>
+  </div>
 </div>
 <style>
-	.card{
-	max-width: 20rem;
-  border-radius: 5px;
-  background-color: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-	}
+  .card {
+    max-width: 20rem;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
 
-	.container-image{
-		max-width: 20rem;
-		height: 210px;
-	}
+  .container-image {
+    max-width: 20rem;
+    height: 210px;
+  }
   .image {
     border-radius: 5px 5px 0 0;
-		height: 210px;
-		width:100%;
-		object-fit: cover;
-		object-position:top;
+    height: 210px;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
   }
 
   .content-card {
@@ -68,11 +70,11 @@ const { title, owner, description, image, github, website, imageSize} = Astro.pr
     flex-direction: row;
     justify-content: space-between;
   }
-	.title-card  a {
+  .title-card a {
     color: var(--gray-very-dark);
     text-decoration: none;
   }
-	.title-card h3 {
+  .title-card h3 {
     margin: 0;
     font-size: 1.2em;
   }
@@ -83,8 +85,8 @@ const { title, owner, description, image, github, website, imageSize} = Astro.pr
 
   .icon-card {
     font-size: 1.2em;
-	}
-  .icon-card  a {
+  }
+  .icon-card a {
     color: var(--gray-very-darl);
     text-decoration: none;
   }
