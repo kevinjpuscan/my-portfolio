@@ -18,7 +18,7 @@ export const experiences = [
     companyUrl: 'https://www.continuumhq.com',
   },
   {
-    name: 'Remote Support Enginner',
+    name: 'Remote Support Engineer',
     company: 'Hexagon Mining',
     startDate: 'Set 2020',
     endDate: 'Feb 2021',
