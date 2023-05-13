@@ -8,6 +8,14 @@ export const projects = [
     website: 'https://kevinjpuscan.github.io/react-job-listings/',
   },
   {
+    title: 'Invoice App (in progress)',
+    owner: 'Owner',
+    description: 'Project with NextJs and typescript, challenge from FrontendMentor',
+    image: '/images/invoice-app.webp',
+    github: 'https://github.com/kevinjpuscan/invoice_app',
+    website: 'https://invoice-app.kevinpuscan.com/',
+  },
+  {
     title: 'Todo App',
     owner: 'Owner',
     description: 'Project with ReactJs and redux, challenge from FrontendMentor',
