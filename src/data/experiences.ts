@@ -1,20 +1,11 @@
 export const experiences = [
   {
-    name: 'Tech Lead',
+    name: 'Full Stack Developer / Tech Lead',
     company: 'Continuum',
-    startDate: 'Mar 2022',
+    startDate: 'Feb 2021',
     endDate: 'Present',
     description:
       'Lead the technical team of the relink challenge, contributing from the technical side to the growth stage of the platform.',
-    companyUrl: 'https://www.continuumhq.com',
-  },
-  {
-    name: 'Full Stack Developer',
-    company: 'Continuum',
-    startDate: 'Feb 2021',
-    endDate: 'Mar 2022',
-    description:
-      'Integrate the relink development team, a career guidance platform, which seeks to connect people with job opportunities aligned with their skills and interests.',
     companyUrl: 'https://www.continuumhq.com',
   },
   {
